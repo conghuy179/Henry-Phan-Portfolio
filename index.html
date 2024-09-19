@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <section className="about" id = "about">
+        <section className="home" id = "home">
             <div className="container">
                 <div className="introduction-content">
                     <div className="huy-main">
@@ -43,14 +43,23 @@
             </div>
         </section>
 
-        <section id="project">
-            <div className="projects-container">
-                <p>My Projects</p>
-                <div className="projects">
-                    <a href="https://conghuy179.github.io/CoffeeShopWebsite/">
-                        <img src="img/coffee-website.jpg">
-                    </a>
-                </div>
+        <section className="sideNav" id="sideNav">
+            <div className="container">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
             </div>
         </section>
 
@@ -67,9 +76,22 @@
             </div>
         </section>
 
+        <section className="projects" id="projects">
+            <div className="projects-container">
+                <h1>My Projects</h1>
+                <div className="projects">
+                    <a href="https://conghuy179.github.io/CoffeeShopWebsite/">
+                        <img src="img/coffee-website.jpg">
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section className="contact" id="contact">
             <div className="container">
-                <div className="contact-button">Contact Now</div>
+                <div className="contact-button">
+                    <h1>Contact Now</h1>
+                </div>
                 <div className="contact-icon">
                     <div className="contact-icon-box">
                         <span>
