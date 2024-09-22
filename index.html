@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Henry Phan's Portfolio</title>
+        <title> Henry Phan's Portfolio</title>        
         <!-- CSS -->
         <link rel="stylesheet" href="mystyle.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!--- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+        
 
     </head>
     <body>
         <header>
         </header>
-        <section className="home" id = "home">
-            <div className="container">
-                <div className="introduction-content">
-                    <div className="huy-main">
-                        <div className="huy-text">
+        <section class="home" id = "huy">
+            <div class="container">
+                <div class="introduction-content">
+                    <div class="huy-main">
+                        <div class="huy-text">
                             <h1>Front-End Developer</h1>
                             <p>Developing Website?</p>
-                            <p>I am your guy!</p>
-                            <img src="img/henry.jpg">
-                            <span className="huy-site">
+                            <p>I am your guy!</p>                            <span>
                                 <!-- add linkedin and github here                         -->
-                                 <a href="https://www.linkedin.com/in/cong-huy-phan/" rel="noreferrer">
-                                  <img src="img/linkedin-logo-png-2026.png" alt="linkedin">
+                                <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/cong-huy-phan/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin">
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg> 
+                                </a>
+                                <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/conghuy179">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github">
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                                    </svg>                                  
                                 </a> 
-                                <a href="https://github.com/conghuy179" rel="noreferrer">
-                                    <img src="img/github-logo-icon-16153.png" alt="github">
-                                  </a> 
                             </span>
-                            
-                            <div className="huy-skills">
+                            <img class="huy-img">
+
+                            <div class="huy-skills">
                                 <p>My Tech Stack</p>
-                                <div className="logo">
+                                <div class="logo">
                                     <ul>
                                         <img src="img/html-5.png" alt="html">
                                         <img src="img/css-3.png" alt="css">
@@ -49,8 +55,8 @@
             </div>
         </section>
 
-        <section className="sideNav" id="sideNav">
-            <div className="container">
+        <section class="nav" id="nav">
+            <nav>
                 <ul>
                     <li>
                         <a href="#home">Home</a>
@@ -66,46 +72,56 @@
                     </li>
 
                 </ul>
-            </div>
+            </nav>
         </section>
 
-        <section className="about-me" id="about-me">
-            <div className="container">
-                <div className="huy-bio">
+        <section class="about-me" id="about-me">
+            <div class="container">
+                <div class="about-me-content">
                     <h1>About Me</h1>
-                    <p>My name is Cong Huy (Henry) Phan, a highly motivated Software Engineer with a background in banking, transitioning into front-end development. 
+                    <div class="text-side">
+                        <h3>About Me</h3>
+                        <h4>
+                            Front-end Developer
+                            <br>
+                            Adelaide, Australia
+                        </h4>
+                        <p>My name is Cong Huy (Henry) Phan, a highly motivated Software Engineer with a background in banking, transitioning into front-end development. 
                         Leveraging over a year of experience in building responsive and user-friendly web applications in a high-tech environment. 
                         I am thrived in collaborative environments and possess excellent communication skills to create intuitive and delightful user experiences. 
                         Seeking a dynamic position that fosters continuous learning and allows me to contribute to high-quality web solutions and exceeding client expectations.
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section className="projects" id="projects">
-            <div className="projects-container">
-                <h1>My Projects</h1>
-                <div className="projects">
-                    <h2>Coffee Shop Website</h2>
-                    <a href="https://conghuy179.github.io/CoffeeShopWebsite/">
-                        <img src="img/coffee-website.jpg">
-                    </a>
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <div class="projects-content">
+                    <h1>My Projects</h1>
+                    <div class="project-one">
+                        <h2>Coffee Shop Website</h2>
+                        <a href="https://conghuy179.github.io/CoffeeShopWebsite/">
+                            <img src="img/coffee-website.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section className="contact" id="contact">
-            <div className="container">
-                <div className="contact-button">
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-button">
                     <h1>Contact Now</h1>
                 </div>
-                <div className="contact-icon">
-                    <div className="contact-icon-box">
+                <div class="contact-icon">
+                    <div class="contact-icon-box">
                         <span>
                             <!-- This is for Mail icon -->
                         </span>
 
-                        <div className="contact-info">
+                        <div class="contact-info">
                             <h3>Mail</h3>
                             <a href="mailto:henryphan.work.au@gmail.com">henryphan.work.au@gmail.com</a>
                         </div>
