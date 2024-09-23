@@ -54,11 +54,6 @@ html {
     font-size: 100%;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-color: #ffffff;
@@ -71,53 +66,6 @@ body {
     padding: 0 0rem;
     max-width: 110rem;
     background-color: white;
-}
-
-.mobile-nav {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    z-index: 300;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.mobile-nav span {
-    font-size: 3.3rem;
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
-    cursor: pointer;
-}
-
-.mobile-nav span:hover {
-    color: #147efb;
-    transition: all 0.3s;
-}
-
-.mobile-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    font-size: 2.3rem;
-    list-style: none;
-}
-
-.mobile-nav ul a {
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.mobile-nav ul a:hover {
-    color: #147efb;
-    transition: all 0.3s;
 }
 
 /* Navigation */
@@ -137,12 +85,6 @@ nav {
     align-items: center;
 }
 
-@media (max-width: 400px) {
-    nav {
-        padding: 2px 30px 25px 30px;
-    }
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -156,11 +98,6 @@ nav ul a {
     font-weight: 600;
 }
 
-@media (max-width: 900px) {
-    nav ul a {
-        display: none;
-    }
-}
 
 nav ul a:hover {
     color: #c73016; /* Darker hover color for links */
@@ -168,8 +105,9 @@ nav ul a:hover {
 
 /* Logo */
 .logo {
-    cursor: pointer;
-    color: #2d2e32; /* Darker text color for logo */
+  width: 50;
+  cursor: pointer;
+  color: #2d2e32; /* Darker text color for logo */
 }
 
 /* Home Section */
@@ -237,6 +175,7 @@ nav ul a:hover {
 }
 
 .huy-text {
+
     display: flex;
     flex-direction: column;
     max-width: 700rem;
@@ -287,7 +226,6 @@ nav ul a:hover {
 @media (max-width: 900px) {
     .huy-text span {
         justify-content: center;
-        margin-top: -2rem;
         margin-bottom: 4rem;
         gap: 1.6rem;
     }
@@ -413,33 +351,30 @@ nav ul a:hover {
 }
 
 .about-me h1 {
-    margin-left: 2rem;
     font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 1rem;
     margin-top: 3rem;
     color: #771a1a;
 }
-.about-me h4{
+.about-me h2{
     margin-bottom: 1rem;
     color: #070707;
     font-family: Mulish,sans-serif;
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.5;
 }
 .about-me p {
     font-size: 1.9rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: Mulish,sans-serif;
     line-height: 1.6;
     color: #555555;
 }
 .projects {
-    background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
     max-width: 800rem;
     position: relative;
     
@@ -450,7 +385,7 @@ nav ul a:hover {
     }
   }
 
-  .project-container {
+  .projects-container {
     margin: 0 auto;
     padding: 0 0rem;
     max-width: 110rem;
@@ -465,7 +400,7 @@ nav ul a:hover {
   }
 
   .projects-content h1 {
-    margin-left: 30rem;
+    margin-left: 2rem;
     font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 1rem;
@@ -479,157 +414,258 @@ nav ul a:hover {
   }
   
   .project-one {
-    background-color: white;
-    align-items: center;
+  margin-top: 30px;
+  background-color: white;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   }
-  .project-one h2 {
-    text-align: center;
-  margin-left: 15rem;
-    margin-bottom: 1rem;
-    color: #070707;
-    font-family: Mulish,sans-serif;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1.5;
-  }
+
+.project-one h2 {
+  text-align: center;
+  margin-right: 20rem;
+  margin-bottom: 1rem;
+  color: #070707;
+  font-family: Mulish,sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .project-one img {
 border-radius: 1.7rem;
-  width: 41rem;
-  display: flex;
-  border: 3px solid #2d2e32;
-  height: 34rem;
-  position: relative;
+width: 41rem;
+display: flex;
+border: 3px solid #2d2e32;
+height: 34rem;
+position: relative;
 }
-  .contact {
-    background-color: white;
-    padding: 11rem 0;
 
+.project-one img:hover {
+  transform: translateY(-1rem);
+}
+
+svg:hover {
+    transform: translateY(-5px);
+}
+.contact {
+  flex-direction: column;
+  max-width: 700rem;
+  display: flex;
+  position: absolute;
+  padding-left: 18rem;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  color: #771a1a;
+}
+.contact h3{
+  margin-bottom: 1rem;
+  color: #070707;
+  font-family: Mulish,sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.contact img {
+  width: 2rem;
+  margin-right:12px;
+}
+
+.contact a {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: Mulish,sans-serif;
+  line-height: 1.6;
+  color: #555555;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.contact a:hover {
+  color: #b31b00;
+  transition: all .3s;
+}
+
+/* Media Queries for Tablets (768px and below) */
+@media (max-width: 768px) {
+  /* Adjust container padding */
+  .container {
+      padding: 0 1.5rem;
   }
-  @media (max-width: 1020px) {
-    .contact {
-      padding: 8rem 0;
-    }
+
+  /* Adjust nav menu for tablets */
+  nav {
+    opacity: 0;
   }
-  .contact__content {
-    display: flex;
-    flex-direction: column;
+
+  /* Adjust home section for tablet */
+  .huy {
+      height: auto;
+      padding: 10rem 1rem;
   }
-  @media (max-width: 750px) {
-    .contact-button {
-        margin-left: 30rem;
-        font-size: 2rem;
-        line-height: 1.3;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-        color: #771a1a;
-    }
-  }
-  .contact-button p {
-    color: #147efb;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-  }
-  .contact-button h3 {
-    color: #2d2e32;
-    font-size: 2.5rem;
-  }
-  .contact__icons {
-    display: flex;
-    gap: 8rem;
-    flex-wrap: wrap;
-    margin-top: 6rem;
-  }
-  @media (max-width: 750px) {
-    .contact__icons {
+
+  .huy-main {
       flex-direction: column;
-      gap: 5rem;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  .contact__icon-box {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  @media (max-width: 750px) {
-    .contact__icon-box {
-      flex-direction: column;
-    }
-  }
-  .contact__icon-box span {
-    background-color: white;
-    width: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    color: #147efb;
-  }
-  .contact__info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .contact__info h3 {
-    font-size: 1.7rem;
-    color: #2d2e32;
-  }
-  .contact__info a,
-  .contact__info p {
-    font-size: 1.7rem;
-    color: #767676;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .contact__info a:hover,
-  .contact__info p:hover {
-    color: #147efb;
-    transition: all 0.3s;
-  }
-  
-  footer {
-    background-color: #2d2e32;
-    padding: 5rem 0;
-    width: 100%;
-  }
-  footer h3 {
-    font-size: 1.7rem;
-    color: white;
-  }
-  
-  .footerc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @media (max-width: 550px) {
-    .footerc {
-      flex-wrap: wrap;
-      justify-content: center;
       gap: 2rem;
-      text-align: center;
+  }
+
+  .huy-text h1 {
+      font-size: 3rem;
+  }
+
+  .huy-text p {
+      font-size: 1.7rem;
+  }
+
+  .huy-img {
+      width: 22rem;
+      height: 22rem;
+  }
+
+  .huy-skills ul {
+      flex-wrap: wrap;
+      gap: 1rem;
+  }
+
+  .huy-skills ul li img {
+      width: 50px;
+  }
+
+  /* Adjust "About Me" section */
+  .about-me-content h1 {
+      font-size: 3rem;
+  }
+
+  .about-me-content h2 {
+      font-size: 2rem;
+  }
+
+  .about-me-content p {
+      font-size: 1.6rem;
+  }
+
+  /* Adjust projects section */
+  .projects-container {
+      padding: 2rem 1rem;
+  }
+
+  .projects-content h1 {
+      font-size: 3rem;
+  }
+  .project-one {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+        text-align: center; /* Center the content */
     }
+
+    .project-one img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .project-one h2 {
+        margin: 2rem 0; /* Adjust margin for the heading */
+        font-size: 2.2rem;
+    }
+}
+
+
+/* Media Queries for Mobile (480px and below) */
+@media (max-width: 480px) {
+  nav {
+     opacity: 0;
   }
-  .footerc__socials {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+
+  /* Adjust home section for mobile */
+  .huy {
+      padding: 5rem 1rem;
   }
-  .footerc__socials a {
-    font-size: 2.3rem;
-    color: white;
+
+  .huy-main {
+      gap: 1rem;
   }
-  .footerc__socials a:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+
+  .huy-text h1 {
+      font-size: 2.5rem;
   }
+
+  .huy-text p {
+      font-size: 1.5rem;
+  }
+
+  .huy-img {
+      width: 18rem;
+      height: 18rem;
+  }
+
+  .huy-skills ul li img {
+      width: 50px;
+  }
+
+  /* Adjust "About Me" section */
+  .about-me-content h1 {
+    text-align: center;
+      font-size: 2rem;
+  }
+
+  .about-me-content h2 {
+    text-align: center;
+      font-size: 1.4rem;
+  }
+
+  .about-me-content p {
+    text-align: center;
+      font-size: 1rem;
+  }
+
+  /* Adjust projects section */
+  .projects-content h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  .project-one {
+    flex-direction: row;
+    justify-content: flex-strart;
+    padding: 0.5rem;
+    text-align: left;
+  } 
+
+  .project-one img {
+    width: 60%; /* Resize image on small devices */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .project-one h2 {
+      font-size: 1.4rem;
+      margin: 1,5rem;
+  }
+
+  .contact {
+    margin-left:-18rem;
+  }
+
+  .contact-content h1 {
+    margin-left: 2rem;
+    text-align: center;
+      font-size: 2rem;
+  }
+
+  .contact-content h3 {
+    text-align: center;
+      font-size: 1.4rem;
+  }
+
+  .contact-content a {
+    text-align: center;
+      font-size: 1rem;
+  }
+}
